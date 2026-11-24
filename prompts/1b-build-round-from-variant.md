@@ -17,7 +17,8 @@ PICK A VARIANT
 - Build a NEW app inspired by it. Do not copy wording from the notes. Name the folder round-NN-<variant-short-name>.
 
 TASK FORMAT (overrides; match the real assessment)
-- TASK.md in the repo root, written like the real assessment prompt: a short app description, then a "Reported issues" list of 2 to 4 broken behaviors written as user-facing symptoms (example style: "Users can fund a loan with insufficient balance"). Never name files, functions or causes. End with: "Pass as many tests as possible. Behavior must follow the API contract in README.md."
+- TASK.md in the repo root, matching Amazon's official demo wording exactly: "Your task is to fix this backend issue. Refer to the README.md file for more details." then a line: "Note: The acceptance criteria for this task require that your solution pass all predefined unit tests."
+- README.md opens with an "Issue" section, written like a support ticket: a short app description and 2 to 4 broken behaviors as user-facing symptoms (example style: "Users can fund a loan with insufficient balance"). Never name files, functions or causes.
 - README.md must include an API contract per endpoint: method, path, required fields, required headers, success status, and each error status with its exact message. Tests assert on these.
 - Bugs: one per listed issue, plus 1 or 2 UNLISTED bugs (not in TASK.md) that a visible or hidden test catches.
 - Flip a coin: if heads, also break one test-support file (a conftest fixture or test helper with an undefined name or wrong import) so some tests error before running. Test assertions themselves stay correct. Note the result in the answer key.

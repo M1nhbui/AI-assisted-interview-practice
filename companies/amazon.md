@@ -34,6 +34,11 @@ Labels: [official-Amazon] amazon.jobs pages, [official-HackerRank] HackerRank do
 - Assistant rule: guarded helper. May read the repo, explain code, answer questions, and suggest short code snippets in chat. Does not edit files, run tests, point out where the bugs are, or write the full fix for a failing test unprompted.
 - Warm-up before the round: one timed LeetCode medium, about 40 min, no AI, right before the repo round (matches the 100 min shared block).
 
+## Official demo (seen by Minh in Amazon's HackerRank practice, 2026-11-24)
+- The task statement is two lines: "Your task is to fix this backend issue. Refer to the README.md file for more details." plus a note that acceptance requires passing all predefined unit tests.
+- So the issue description lives in README.md, not in a separate task file. The IDE has a Run Tests button (no terminal test commands needed).
+- "Predefined unit tests" suggests the visible tests are the acceptance bar; candidate reports still mention hidden tests, so keep practicing with both.
+
 ## Reported variants
 - See companies/amazon-reported-variants.md. Key points: the task prompt lists 2 to 4 broken behaviors, some bugs (and sometimes a broken test fixture) are left unlisted, tests assert API status codes and messages from the README contract, and on some harnesses the assistant only sees the open file.
 - Use prompts/1b-build-round-from-variant.md for rounds modeled on these.
