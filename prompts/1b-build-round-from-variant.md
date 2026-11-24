@@ -20,7 +20,7 @@ TASK FORMAT (overrides; match the real assessment)
 - TASK.md in the repo root, matching Amazon's official demo wording exactly: "Your task is to fix this backend issue. Refer to the README.md file for more details." then a line: "Note: The acceptance criteria for this task require that your solution pass all predefined unit tests."
 - README.md opens with an "Issue" section, written like a support ticket: a short app description and 2 to 4 broken behaviors as user-facing symptoms (example style: "Users can fund a loan with insufficient balance"). Never name files, functions or causes.
 - README.md must include an API contract per endpoint: method, path, required fields, required headers, success status, and each error status with its exact message. Tests assert on these.
-- Bugs: one per listed issue, plus 1 or 2 UNLISTED bugs (not in TASK.md) that a visible or hidden test catches.
+- Bugs: one per listed issue, plus 1 or 2 UNLISTED bugs (not in the README Issue section) that a visible or hidden test catches.
 - Flip a coin: if heads, also break one test-support file (a conftest fixture or test helper with an undefined name or wrong import) so some tests error before running. Test assertions themselves stay correct. Note the result in the answer key.
 - Use defect shapes from the reports: inverted comparison, object saved but never persisted or never linked to its user/parent, missing existence check, missing or wrong status code or message, missing validation, skipped time-window check, off-by-one.
 - At least one bug lives outside the view: in a model, serializer, service/helper module or utility.
