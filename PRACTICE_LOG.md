@@ -13,3 +13,4 @@
 | amazon | round-01 | library | Django REST Framework, pytest-django | 2026-11-23 |
 | amazon | round-02 | password reset (reported variant) | Django REST Framework, pytest-django | 2026-11-23 |
 | amazon | round-03 | review moderation (reported variant) | Django REST Framework, pytest-django | 2026-11-23 |
+| amazon | round-04 | issue comments (reported variant, official demo format) | Django REST Framework, pytest-django | 2026-11-24 |
